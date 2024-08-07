@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+// import ButtonC from './components/ButtonC.vue';
 </script>
 
 <template>
@@ -10,12 +11,12 @@ import TheWelcome from './components/TheWelcome.vue'
     
     <div class="wrapper">
       <HelloWorld msg="Hye there, My First Vue Project" />
+      <!-- <ButtonC></ButtonC> -->
     </div>
   </header>
 
   <main>
     <TheWelcome />
-     
   </main>
 </template>
 
