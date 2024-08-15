@@ -3,6 +3,10 @@ defineProps({
   msg: {
     type: String,
     required: true
+  },
+  msg_time: {
+    type: String,
+    required: true
   }
 })
 
@@ -17,7 +21,7 @@ function increment() {
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1 class="green">{{ msg }} created at {{ msg_time }}</h1>
     <h3>
       Ohanz successfully created and edited a project with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
@@ -50,11 +54,16 @@ h3 {
   text-align: center;
 }
 
+.buttonDIV{
+  margin-top: 30px;
+}
 .button-c{
   height: 35px; width: 350;
-  background-color: rgb(30, 2, 120);
+  background-color: rgb(49, 31, 107);
   font-size: medium;color: white;
   box-shadow: none;
+  border: 2px solid rgb(95, 92, 92);
+  border-radius: 5px;
 }
 
 @media (min-width: 1024px) {

@@ -10,7 +10,7 @@ import TheWelcome from './components/TheWelcome.vue'
     <img alt="my logo" class="logo" src="./assets/qsd.png" width="125" height="125" />
     
     <div class="wrapper">
-      <HelloWorld msg="Hye there, My First Vue Project" />
+      <HelloWorld msg="Hye there, My First Vue Project" msg_time="1:00AM" />
       <!-- <ButtonC></ButtonC> -->
     </div>
   </header>
