@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 // import ButtonC from './components/ButtonC.vue';
+import AppFooter from '@/components/appFooter.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
   </main>
+  <app-footer />
 </template>
 
 <style scoped>

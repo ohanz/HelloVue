@@ -13,9 +13,20 @@ defineProps({
 import { ref } from 'vue'
 
 const count = ref(0)
-
+const color = ref('white')
+const background = ref('#311f6b')
 function increment() {
   count.value++
+   color.value = color.value === 'white' ? '#311f6b' : 'white'
+   background.value = background.value === '#311f6b' ? 'white' : '#311f6b'
+}
+const isRed = ref(true)
+function toggleRed() {
+  isRed.value = !isRed.value
+}
+
+function toggleColor() {
+  color.value = color.value === 'green' ? 'blue' : 'green'
 }
 </script>
 
@@ -28,7 +39,7 @@ function increment() {
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
       <br /> Find At The Right-Side Of The Page, The Way I Made This.
       <div class="buttonDIV">
-        <button class="button-c" @click="increment">
+        <button :style="{ color, background }" class="button-c" @click="increment">
     {{ "You clicked "+count+ " number of times." }}
   </button>
       </div>
@@ -59,7 +70,7 @@ h3 {
 }
 .button-c{
   height: 35px; width: 350;
-  background-color: rgb(49, 31, 107);
+  background-color: #311f6b;
   font-size: medium;color: white;
   box-shadow: none;
   border: 2px solid rgb(95, 92, 92);
