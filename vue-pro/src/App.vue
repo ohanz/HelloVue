@@ -20,7 +20,22 @@ import AppFooter from '@/components/appFooter.vue'
     <TheWelcome />
   </main>
   <app-footer />
+  <button @click="goToAboutPage">About Us</button>
+<router-view></router-view>
 </template>
+
+
+<script>
+export default {
+  name: "App",
+  methods: {
+    goToAboutPage() {
+      this.$router.push("/about");
+    },
+  },
+};
+</script>
+
 
 <style scoped>
 header {
