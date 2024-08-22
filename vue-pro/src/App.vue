@@ -20,8 +20,8 @@ import AppFooter from '@/components/appFooter.vue'
     <TheWelcome />
   </main>
   <app-footer />
-  <button @click="goToAboutPage">About Us</button>
-<router-view></router-view>
+  <!-- <button @click="goToAboutPage">About Us</button> -->
+<router-view id="rv"></router-view>
 </template>
 
 
@@ -41,6 +41,10 @@ export default {
 header {
   line-height: 1.5;
 }
+
+/* router-view#rv{
+  position: absolute; bottom:0; margin-top: 100px;margin-bottom: 100px;
+} */
 
 .logo {
   display: block;
