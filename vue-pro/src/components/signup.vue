@@ -2,11 +2,16 @@
     <section class="body">
       <h1>Sign Up</h1>
       <h2>Register and Be a Hyper Member </h2>
-      <div id="talker">Username: <input type="text" value="username" /></div>
-      <div id="talker">Password: <input type="password" value="passw" /></div>
-      <div id="talker">Email: <input type="email" value="email" /></div>
-      <div id="talker">Bio/About: <input type="text" aria-multiline="true" value="username" /></div>
-      <p>SignUp Now <button value="button">Submit</button></p>
+      <div id="talker">Username:
+         <input type="text" value="" placeholder="username" /></div>
+      <div id="talker">Password: 
+        <input type="password" value="" name="passw" /></div>
+      <div id="talker">Email: 
+        <input type="email"  placeholder="email" /></div>
+      <div id="talker"><span style="position:relative; top: -50px; padding-right: 10px;">Bio/About:</span> 
+        <textarea id="texta" type="text" style="height:100px; width: 250px;" placeholder="Add Bio" ></textarea></div>
+      <p>SignUp Now
+         <button id="butt" value="button">Submit</button></p>
 
       <footer>
         <p :style="{  }" @click="">Edit Profile</p>
@@ -35,11 +40,43 @@
     div#talker{
       font-size: 20px !important;color: #9b5959;margin: 10px 0 3px 0;
     }
-    input{ margin-left: 10px; ;width: 180px; min-height: 35px; border: 1px solid #ccc;
-         background: none !important;}
-    button{
-        margin-top: 20px;
+    input, #texta{
+        color: white;padding: 5px; background: none !important;
     }
+    input{color: white; margin-left: 10px; ;width: 200px; min-height: 35px; border: 1px solid #ccc;
+         border-radius: 5px; padding: 10px;
+         -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;}
+  input:focus {
+  border: 3px solid #555;
+}
+
+         button#butt{
+            background-color: #45357a;
+            color: white;
+            padding: 14px 20px;
+            margin: 18px 0;border: none;
+            border-radius: 4px;
+            cursor: pointer;
+         }
+         button#butt:hover {
+         background-color: #311f6b;
+        }
+
+        
+ ::-ms-input-placeholder { /* Edge 12-18 */
+  color: red;
+  padding: 10px;
+}
+
+::placeholder {
+  color: red;
+  padding: 10px;
+}
+    /* button{
+        margin-top: 20px;
+    } */
 
     footer {
     margin-top: 30px;
