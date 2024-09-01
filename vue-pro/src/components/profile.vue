@@ -1,16 +1,14 @@
-<!-- AboutUs.vue -->
-
 <template>
-    <section class="body">
-    <h1>About Ihype Corporation</h1>
-    <h2>View Ihype's About Page</h2>
-    <div id="talker">Here you will find the details of the startup-Company and Associates</div>
+  <section class="body">
+    <h1>Your Profile</h1>
+    <h2>View And Edit Your Profile Information Here</h2>
+    <div id="talker">Picture: </div>
   </section>
-  </template>
-  
-  <style>
-  
-  section.body{
+</template>
+
+<style>
+ 
+ section.body{
     display: inline; padding-left: 100px;margin:40px 0 100px 0;
     /* visibility:hidden */
   }
@@ -22,5 +20,4 @@
     font-size: 22px;color: #9b5959;
   }
 
-  
-</style>
+ </style>
